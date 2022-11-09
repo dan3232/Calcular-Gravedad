@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Monocraft';
+    background-image: linear-gradient(135deg, #c6d4e7 0%, #929db0 100%);
+}
+
+#backgrnd {
+    background-image: linear-gradient(to top, rgba(119, 150, 150, 0.85) 0%, rgba(120, 104, 141, 0.85) 100%), url(./anoushka-p-f1YfrZ1o2r8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#backgrnd p {
+    color:black;
+    font-size: 5rem;
+    margin:15px 0;
+    font-weight: bold;
+    padding: 3px 10px;
+    background: linear-gradient(to top, rgba(210, 219, 224, 0.85) 0%, rgba(226, 235, 240, 0.85) 100%);
+}
+
+#backgrnd :last-child {
+    font-size: 4rem;
+    color: rgb(33, 62, 98);
+}
+
+#calculos {
+    margin: 100px 350px;
+    background-color: rgb(92, 150, 187);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:10px;
+    padding: 30px;
+    border-bottom:6px solid black ;
+}
+
+button {
+    background:rgb(127, 189, 35);
+    border: 1 solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size:medium;
+}
+
+button:hover {
+    background:rgb(155, 196, 95);
+}
+
+input{
+    width:35px;
+    background: none;
+}
+
+input:last-child {
+    margin-bottom: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    text-shadow: 1px 1px rgb(214, 169, 169);
+}
+
+.btns-class {
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#footer {
+    font-style: italic;
+    background: white;
+    color: black;
+    text-shadow: none;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+
+a {
+ color: black;
+}
