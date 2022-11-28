@@ -1,10 +1,16 @@
 body {
     margin: 0;
     font-family: 'Monocraft';
-    background-image: linear-gradient(135deg, #c6d4e7 0%, #929db0 100%);
+    background:#cfcfcf;
+    font-size: 1.125rem;
 }
 
-#backgrnd {
+label,
+p {
+    margin: 1em;
+}
+
+.backgrnd {
     background-image: linear-gradient(to top, rgba(119, 150, 150, 0.85) 0%, rgba(120, 104, 141, 0.85) 100%), url(./anoushka-p-f1YfrZ1o2r8-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,39 +25,55 @@ body {
     
 }
 
-#backgrnd p {
+.title {
     color:black;
     font-size: 10vh;
     margin:15px 0;
     font-weight: bold;
-    padding: 3px 10px;
+    padding: .15em;
     background: linear-gradient(to top, rgba(210, 219, 224, 0.85) 0%, rgba(226, 235, 240, 0.85) 100%);
 }
 
-#backgrnd :last-child {
+.title-name {
     font-size:10vh;
     color: rgb(33, 62, 98);
 }
 
 #calculos {
-    margin: 100px auto;
-    width:50vh;
-    background-color: rgb(92, 150, 187);
+    margin: 5em auto;
+    width:40em;
+    background-color: rgb(141, 192, 205);
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-around;
-    flex-direction: column;
-    border-radius:10px;
-    padding: 30px;
-    border-bottom:6px solid black ;
+    border-bottom-left-radius:.5em;
+    border-bottom-right-radius: .5em;
+    padding:4em;
+    border-bottom:1em solid black ;
+}
+
+@media (max-width: 800px) {
+    #calculos {
+        width:50%;
+        flex-direction: column;
+    }
+    
+    .title-name {
+        text-align: center;
+    }
 }
 
 button {
     background:rgb(127, 189, 35);
-    border: 1 solid black;
+    border: .165em solid black;
     border-radius: 5px;
-    padding: 10px 20px;
-    font-size:medium;
+    width: 6.5em;
+    height: 2em;
+    font-size:1em;
+    margin: 1em auto;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
 }
 
 button:hover {
@@ -63,9 +85,9 @@ input{
     background: none;
 }
 
-input:last-child {
+/* input:last-child {
     margin-bottom: 10px;
-}
+} */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -74,22 +96,14 @@ input::-webkit-inner-spin-button {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 2rem;
     text-shadow: 1px 1px rgb(214, 169, 169);
 }
 
-.btns-class {
+.columns {
     display: flex;
-    width: 100%;
-    justify-content:space-around;
+    flex-direction: column;
     text-align: center;
-}
-
-.info {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
 }
 
 #footer {

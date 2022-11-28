@@ -8,26 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="backgrnd">
-        <p>Física</p>
-        <p>Martillo de fuerza</p>
+    <div class="backgrnd">
+        <p class="title">Física</p>
+        <p class="title title-name">Martillo de fuerza</p>
     </div>
-    <div id="calculos">
-        <div class="info">
-            <div>
-                <h2>Datos</h2>
-                <label>h = <input type="number" value="0" id="altura" onfocus="this.value=''"> m</label><br>
-                <label>t = <input type="number" value="0" id="tiempo" onfocus="this.value=''"> s</label>
-            </div>
-            <div>
-                <h2>Resultados</h2>
-                <p>Vo = <span id="velocidad">0</span>m/s</p>
-                <p>a = <span id="aceleración">0</span>m/s^2</p>
-            </div>
-        </div>
-        <div class="btns-class">
+    <div id="calculos">   
+        <div class="columns">
+            <h2>Datos</h2>
+            <label>h = <input type="number" value="0" id="altura" onfocus="this.value=''"> m</label>
+            <label>t = <input type="number" value="0" id="tiempo" onfocus="this.value=''"> s</label>
             <button id="calc">Calcular</button>
-            <button id="reset">Reset</button>   
+        </div>
+        <div class="columns">
+            <h2>Resultados</h2>
+            <p>Vo = <span id="velocidad">0</span>m/s</p>
+            <p>a = <span id="aceleración">0</span>m/s^2</p>
+            <button id="reset">Reset</button> 
         </div>
     </div>
     <script src="index.js"></script>
